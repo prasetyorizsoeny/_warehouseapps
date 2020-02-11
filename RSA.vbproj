@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA15063C-11A3-4E15-B71A-DEB53BE7969D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RSA.My.MyApplication</StartupObject>
+    <RootNamespace>RSA</RootNamespace>
+    <AssemblyName>RSA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>811DE82B307658A5986459B792E0D3753E5D85FD</ManifestCertificateThumbprint>
+    <ManifestKeyFile>RSA_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RSA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RSA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>RSA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>RSA.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\Office15\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\Framework64\v2.0.50727\System.Windows.Forms.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangePass.Designer.vb">
+      <DependentUpon>ChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FakturTagihFrm.Designer.vb">
+      <DependentUpon>FakturTagihFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FakturTagihFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintTagihanFrm.Designer.vb">
+      <DependentUpon>PrintTagihanFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintTagihanFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryHistoryFrm.Designer.vb">
+      <DependentUpon>QueryHistoryFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QueryHistoryFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorFrm.Designer.vb">
+      <DependentUpon>ErrorFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpenseFrm.Designer.vb">
+      <DependentUpon>ExpenseFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenseFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindFrm.Designer.vb">
+      <DependentUpon>FindFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kategori.Designer.vb">
+      <DependentUpon>Kategori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListTempoFrm.Designer.vb">
+      <DependentUpon>ListTempoFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListTempoFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListTerjual.Designer.vb">
+      <DependentUpon>ListTerjual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListTerjual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module.vb" />
+    <Compile Include="OrdersInFrm.Designer.vb">
+      <DependentUpon>OrdersInFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersInFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersOutFrm.Designer.vb">
+      <DependentUpon>OrdersOutFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersOutFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PriceFrm.Designer.vb">
+      <DependentUpon>PriceFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PriceFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFrm.Designer.vb">
+      <DependentUpon>ProductFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileFrm.Designer.vb">
+      <DependentUpon>ProfileFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryD1Frm.Designer.vb">
+      <DependentUpon>QueryD1Frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QueryD1Frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryDFrm.Designer.vb">
+      <DependentUpon>QueryDFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QueryDFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryHFrm.Designer.vb">
+      <DependentUpon>QueryHFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QueryHFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturFrm.Designer.vb">
+      <DependentUpon>ReturFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UploadFrm.Designer.vb">
+      <DependentUpon>UploadFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UploadFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFrm.Designer.vb">
+      <DependentUpon>UserFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.vb">
+      <DependentUpon>MainFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.vb">
+      <DependentUpon>LoginFrm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FakturTagihFrm.resx">
+      <DependentUpon>FakturTagihFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintTagihanFrm.resx">
+      <DependentUpon>PrintTagihanFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryHistoryFrm.resx">
+      <DependentUpon>QueryHistoryFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorFrm.resx">
+      <DependentUpon>ErrorFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpenseFrm.resx">
+      <DependentUpon>ExpenseFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindFrm.resx">
+      <DependentUpon>FindFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kategori.resx">
+      <DependentUpon>Kategori.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListTempoFrm.resx">
+      <DependentUpon>ListTempoFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListTerjual.resx">
+      <DependentUpon>ListTerjual.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersInFrm.resx">
+      <DependentUpon>OrdersInFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersOutFrm.resx">
+      <DependentUpon>OrdersOutFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PriceFrm.resx">
+      <DependentUpon>PriceFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFrm.resx">
+      <DependentUpon>ProductFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileFrm.resx">
+      <DependentUpon>ProfileFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryD1Frm.resx">
+      <DependentUpon>QueryD1Frm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryDFrm.resx">
+      <DependentUpon>QueryDFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryHFrm.resx">
+      <DependentUpon>QueryHFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturFrm.resx">
+      <DependentUpon>ReturFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadFrm.resx">
+      <DependentUpon>UploadFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFrm.resx">
+      <DependentUpon>UserFrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="RSA_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
